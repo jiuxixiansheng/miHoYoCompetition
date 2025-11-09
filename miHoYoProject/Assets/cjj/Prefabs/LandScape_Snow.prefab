@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 2012234817619498119}
   - component: {fileID: -8407414591737199188}
   - component: {fileID: -5417678283794340240}
+  - component: {fileID: 7916920261343598923}
+  - component: {fileID: 5635326468235649451}
   m_Layer: 6
   m_Name: LandScape_Snow
   m_TagString: Untagged
@@ -104,6 +106,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerGameplay: {fileID: 0}
+--- !u!135 &7916920261343598923
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750832725098382167}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 27.517668
+  m_Center: {x: -62.281036, y: -11.220455, z: 7.1648903}
+--- !u!135 &5635326468235649451
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750832725098382167}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 20.167511
+  m_Center: {x: 15.832291, y: 0, z: 8.701569}
 --- !u!1001 &935559342172535917
 PrefabInstance:
   m_ObjectHideFlags: 0

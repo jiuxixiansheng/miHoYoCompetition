@@ -2187,6 +2187,7 @@ GameObject:
   - component: {fileID: 7033880694891946537}
   - component: {fileID: 6430961582507416426}
   - component: {fileID: -2974887186594004563}
+  - component: {fileID: 6424536248196757398}
   m_Layer: 6
   m_Name: LandScape_Ice
   m_TagString: Untagged
@@ -2329,6 +2330,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerGameplay: {fileID: 0}
+--- !u!136 &6424536248196757398
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4783589523505210683}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 24.64206
+  m_Height: 132.1754
+  m_Direction: 0
+  m_Center: {x: -31.551811, y: -17.319862, z: 70.17801}
 --- !u!1 &4962109312884708385
 GameObject:
   m_ObjectHideFlags: 0

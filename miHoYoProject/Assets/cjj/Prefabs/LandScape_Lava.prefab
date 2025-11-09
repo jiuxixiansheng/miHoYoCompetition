@@ -13,6 +13,10 @@ GameObject:
   - component: {fileID: -6609627093772590041}
   - component: {fileID: 1589214940505351781}
   - component: {fileID: 7960278811715881748}
+  - component: {fileID: 8312716299679214071}
+  - component: {fileID: 5654052714776655925}
+  - component: {fileID: 4280465088396222996}
+  - component: {fileID: 3870594605469636073}
   m_Layer: 6
   m_Name: LandScape_Lava
   m_TagString: Untagged
@@ -134,6 +138,98 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerGameplay: {fileID: 0}
+--- !u!136 &8312716299679214071
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851757058427629436}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 84.654236
+  m_Height: 533.0125
+  m_Direction: 0
+  m_Center: {x: -11.943573, y: 22.211456, z: -230}
+--- !u!136 &5654052714776655925
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851757058427629436}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 55.699543
+  m_Height: 543.5476
+  m_Direction: 0
+  m_Center: {x: -12.35791, y: 56.60281, z: 58.82627}
+--- !u!136 &4280465088396222996
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851757058427629436}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 75.34517
+  m_Height: 348.12378
+  m_Direction: 2
+  m_Center: {x: -200.17815, y: 22.211472, z: -90.555664}
+--- !u!136 &3870594605469636073
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851757058427629436}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 71.68759
+  m_Height: 412.4724
+  m_Direction: 2
+  m_Center: {x: 202.56332, y: 44.77581, z: -62.95807}
 --- !u!1001 &17354389685838253
 PrefabInstance:
   m_ObjectHideFlags: 0

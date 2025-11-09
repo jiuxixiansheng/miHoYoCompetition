@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4130174151530583765}
   - component: {fileID: -8962616960029358056}
   - component: {fileID: -7926090278743078052}
+  - component: {fileID: 8582134056667607466}
   m_Layer: 6
   m_Name: LandScape_Moss
   m_TagString: Untagged
@@ -109,6 +110,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerGameplay: {fileID: 0}
+--- !u!136 &8582134056667607466
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8554890295053387595}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 40.10187
+  m_Height: 89.59006
+  m_Direction: 0
+  m_Center: {x: 21.305634, y: 4.316395, z: 6.6882706}
 --- !u!1001 &696172826117757950
 PrefabInstance:
   m_ObjectHideFlags: 0
