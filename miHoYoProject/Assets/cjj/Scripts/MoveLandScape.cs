@@ -1,0 +1,67 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class MoveLandScape : MonoBehaviour
+{
+    public InputAction rotateAction;
+    public InputAction moveAction;
+
+    public PlayerGameplay playerGameplay;
+
+    public float rotateSpeed = 0f;
+
+    public float moveSpeed = 70f;
+
+    void Start()
+    {
+        
+    }
+
+    void OnEnable()
+    {
+        rotateAction.Enable();
+        moveAction.Enable();
+        // rotateAction.performed += RotateLandscape;
+    }
+
+    void OnDisable()
+    {
+        rotateAction.Disable();
+        moveAction.Disable();
+        // rotateAction.performed -= RotateLandscape;
+    }
+    void FixedUpdate()
+    {
+        if (playerGameplay.chosenLandscape != null)
+        {
+            float rotateInput = rotateAction.ReadValue<float>();
+            if (rotateInput != 0f)
+            {
+                Debug.Log("Rotate Input: " + rotateInput);
+                playerGameplay.chosenLandscape.transform.Rotate(Vector3.up, rotateInput * rotateSpeed * Time.fixedDeltaTime);
+            }
+
+            Vector2 moveInput = moveAction.ReadValue<Vector2>().normalized;
+
+            if(moveInput != Vector2.zero)
+            {
+                Debug.Log("Move Input: " + moveInput);
+                playerGameplay.chosenLandscape.transform.Translate(new Vector3(moveInput.x, 0, moveInput.y) * moveSpeed * Time.fixedDeltaTime);
+            }
+        }
+    }
+
+    void RotateLandscape(InputAction.CallbackContext context)
+    {
+        float rotateInput = context.ReadValue<float>();
+        Debug.Log("Rotate Input: " + rotateInput);
+        if (playerGameplay.chosenLandscape != null)
+        {
+            playerGameplay.chosenLandscape.transform.Rotate(Vector3.up, rotateInput * rotateSpeed * Time.deltaTime);
+        }
+    }
+    
+}

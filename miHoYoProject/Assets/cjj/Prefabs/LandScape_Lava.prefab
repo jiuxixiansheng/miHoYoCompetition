@@ -9,7 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6182699278837353238}
-  m_Layer: 0
+  - component: {fileID: -2688035255644494357}
+  - component: {fileID: 2568082204596151233}
+  - component: {fileID: -4970360026311913438}
+  m_Layer: 6
   m_Name: LandScape_Lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,6 +66,76 @@ Transform:
   - {fileID: 2024147413225406036}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &-2688035255644494357
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851757058427629436}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!65 &2568082204596151233
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851757058427629436}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 8
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 335.73962, y: 239.41191, z: 311.15262}
+  m_Center: {x: -51.151077, y: 20.197548, z: -84.788345}
+--- !u!64 &-4970360026311913438
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851757058427629436}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &17354389685838253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -140,6 +213,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_Granite_42
+      objectReference: {fileID: 0}
+    - target: {fileID: 8404665077235349017, guid: fb266600759f1ce4a8bab7d9ebdef5fb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -230,6 +308,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_Granite_53 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2278052018548445834, guid: 5f575a055c5dc554d9583007afada297,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -318,6 +401,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_Granite_29 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5577069084491687776, guid: 62fb07a9d4954c04bbdcb0ecae26f2c0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -408,6 +496,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_Granite_38
       objectReference: {fileID: 0}
+    - target: {fileID: 9206494569653234521, guid: eb1437426b6db16408414abc5c8acc19,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -482,6 +575,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MagmaWoodCross
       objectReference: {fileID: 0}
+    - target: {fileID: 7991764385294538089, guid: ccddf82df8f43114d98466882287bba2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -505,6 +603,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_Granite_34
+      objectReference: {fileID: 0}
+    - target: {fileID: 1904490542001473375, guid: 975eb6c3b1797fa4a9505f58497c4544,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8063822557675438810, guid: 975eb6c3b1797fa4a9505f58497c4544,
         type: 3}
@@ -660,6 +763,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_Granite_53
       objectReference: {fileID: 0}
+    - target: {fileID: 2278052018548445834, guid: 5f575a055c5dc554d9583007afada297,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -749,6 +857,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_Granite_19
       objectReference: {fileID: 0}
+    - target: {fileID: 6952716292479499798, guid: b451e1d0588c91b4f9db08a2264077cb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -772,6 +885,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MagmaMountain_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993587541353703577, guid: ea2d9ebe77667c44f9e1197ab3d69758,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8716742318381013246, guid: ea2d9ebe77667c44f9e1197ab3d69758,
         type: 3}
@@ -912,6 +1030,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_Granite_14
       objectReference: {fileID: 0}
+    - target: {fileID: 8935959444126332226, guid: ef2c9c17b257e9d4199f72e423e105d4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1000,6 +1123,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_Granite_53 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2278052018548445834, guid: 5f575a055c5dc554d9583007afada297,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1090,6 +1218,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_Granite_53 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2278052018548445834, guid: 5f575a055c5dc554d9583007afada297,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1113,6 +1246,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MagmaMountain_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 323678428011913138, guid: 4804b87a6c8c028429e3dad6ac55f71e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5629975996166098356, guid: 4804b87a6c8c028429e3dad6ac55f71e,
         type: 3}
@@ -1268,6 +1406,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_Granite_53 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2278052018548445834, guid: 5f575a055c5dc554d9583007afada297,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1291,6 +1434,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_Granite_47
+      objectReference: {fileID: 0}
+    - target: {fileID: 5840954306984950323, guid: f79cabdfa1970064dae46d91fceab4f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6420844882143646556, guid: f79cabdfa1970064dae46d91fceab4f6,
         type: 3}
@@ -1380,6 +1528,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_Granite_12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3082061990951531397, guid: a89a28fccdfb66545995817705914165,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8169297769440264525, guid: a89a28fccdfb66545995817705914165,
         type: 3}
@@ -1535,6 +1688,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_Granite_44
       objectReference: {fileID: 0}
+    - target: {fileID: 5667764128844388896, guid: f18005cca81f5fe449b6142bdd7846f1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1623,6 +1781,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_Granite_14 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935959444126332226, guid: ef2c9c17b257e9d4199f72e423e105d4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1713,6 +1876,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_Granite_29 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5577069084491687776, guid: 62fb07a9d4954c04bbdcb0ecae26f2c0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1802,6 +1970,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_Granite_42 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8404665077235349017, guid: fb266600759f1ce4a8bab7d9ebdef5fb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1825,6 +1998,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MagmaMountain_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 323678428011913138, guid: 4804b87a6c8c028429e3dad6ac55f71e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5629975996166098356, guid: 4804b87a6c8c028429e3dad6ac55f71e,
         type: 3}
@@ -1965,6 +2143,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MagmaPlatform_02
       objectReference: {fileID: 0}
+    - target: {fileID: 7169016033262652877, guid: 5f934de1de3bde448bd5355432662e96,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2053,6 +2236,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_Granite_15 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733344483524802785, guid: a33967a2ac92ec74f8d9305a272a7e34,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2143,6 +2331,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_Granite_29
       objectReference: {fileID: 0}
+    - target: {fileID: 5577069084491687776, guid: 62fb07a9d4954c04bbdcb0ecae26f2c0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2166,6 +2359,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_Granite_34 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1904490542001473375, guid: 975eb6c3b1797fa4a9505f58497c4544,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8063822557675438810, guid: 975eb6c3b1797fa4a9505f58497c4544,
         type: 3}
@@ -2321,6 +2519,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MagmaPlatform_01
       objectReference: {fileID: 0}
+    - target: {fileID: 6155273105489989236, guid: 785879b7ffa5fed41922554dbf8d5f92,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2344,6 +2547,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_Granite_48 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3345788175504442075, guid: ac7fdf91d3831d7499359f18606cb859,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3641124359442743082, guid: ac7fdf91d3831d7499359f18606cb859,
         type: 3}
@@ -2499,6 +2707,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_Granite_15
       objectReference: {fileID: 0}
+    - target: {fileID: 4733344483524802785, guid: a33967a2ac92ec74f8d9305a272a7e34,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2573,6 +2786,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MagmaTree
       objectReference: {fileID: 0}
+    - target: {fileID: 5960436006095334623, guid: 1a347d038c462b54881e43bbd5be4128,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2596,6 +2814,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MagmaCave
+      objectReference: {fileID: 0}
+    - target: {fileID: 3835783500288404764, guid: 95ff468a010ca144d945192d02604b8f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6224094514136787045, guid: 95ff468a010ca144d945192d02604b8f,
         type: 3}
@@ -2670,6 +2893,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_Granite_48
+      objectReference: {fileID: 0}
+    - target: {fileID: 3345788175504442075, guid: ac7fdf91d3831d7499359f18606cb859,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3641124359442743082, guid: ac7fdf91d3831d7499359f18606cb859,
         type: 3}
@@ -2824,6 +3052,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocks_Granite_29 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5577069084491687776, guid: 62fb07a9d4954c04bbdcb0ecae26f2c0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
