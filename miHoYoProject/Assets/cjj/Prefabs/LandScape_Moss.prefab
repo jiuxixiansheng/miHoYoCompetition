@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1654865902046445591}
-  - component: {fileID: 2053251125285872542}
-  - component: {fileID: 4111895975268986519}
   - component: {fileID: 3904388795984140620}
   - component: {fileID: 4130174151530583765}
+  - component: {fileID: -8962616960029358056}
+  - component: {fileID: -7926090278743078052}
   m_Layer: 6
   m_Name: LandScape_Moss
   m_TagString: Untagged
@@ -42,49 +42,6 @@ Transform:
   - {fileID: 890393099092837989}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &2053251125285872542
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8554890295053387595}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 64
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
---- !u!65 &4111895975268986519
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8554890295053387595}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 64
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 8
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 58.742447, y: 34.87709, z: 71.6991}
-  m_Center: {x: 22.159203, y: -0.1520729, z: 12.438477}
 --- !u!54 &3904388795984140620
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -122,6 +79,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0e7bd6b47b675640879094ea404d1b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerGameplay: {fileID: 0}
+--- !u!114 &-8962616960029358056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8554890295053387595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb1ce058870ff894b8f58313ecc6d66c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orderInRythm: 2
+  correctlyConnected: 0
+--- !u!114 &-7926090278743078052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8554890295053387595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d541722c863404e85d33a647ecda19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerGameplay: {fileID: 0}

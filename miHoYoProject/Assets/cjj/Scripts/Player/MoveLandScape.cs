@@ -41,7 +41,9 @@ public class MoveLandScape : MonoBehaviour
             if (rotateInput != 0f)
             {
                 Debug.Log("Rotate Input: " + rotateInput);
-                playerGameplay.chosenLandscape.transform.Rotate(Vector3.up, rotateInput * rotateSpeed * Time.fixedDeltaTime);
+                playerGameplay.chosenLandscape.GetComponent<Rigidbody>().MoveRotation(
+                    playerGameplay.chosenLandscape.transform.rotation * Quaternion.Euler(0, rotateInput * rotateSpeed * Time.fixedDeltaTime, 0)
+                );
             }
 
             Vector2 moveInput = moveAction.ReadValue<Vector2>().normalized;
@@ -49,7 +51,10 @@ public class MoveLandScape : MonoBehaviour
             if(moveInput != Vector2.zero)
             {
                 Debug.Log("Move Input: " + moveInput);
-                playerGameplay.chosenLandscape.transform.Translate(new Vector3(moveInput.x, 0, moveInput.y) * moveSpeed * Time.fixedDeltaTime);
+                playerGameplay.chosenLandscape.GetComponent<Rigidbody>().MovePosition(
+                    playerGameplay.chosenLandscape.transform.position + 
+                    new Vector3(moveInput.x, 0, moveInput.y) * moveSpeed * Time.fixedDeltaTime
+                );
             }
         }
     }

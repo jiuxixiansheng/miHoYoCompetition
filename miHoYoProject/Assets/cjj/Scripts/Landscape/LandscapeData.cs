@@ -5,15 +5,8 @@ using UnityEngine;
 
 public class LandscapeData : MonoBehaviour
 {
-    [SerializeField] public List<GameObject> Plugs;
 
     public int orderInRythm;
-    private GameObject defaultPlug;
-    private LandscapeData connectScape;
+    private LandscapeData connectedScape;
     public bool correctlyConnected = false;
-
-    void Start()
-    {
-        defaultPlug = Plugs[0];
-    }
 }
