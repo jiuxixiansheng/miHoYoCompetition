@@ -37,7 +37,8 @@ public class ConnectionDetect : MonoBehaviour
         LandscapeData landscapeDataCur = gameObject.GetComponent<LandscapeData>();
         LandscapeData landscapeDataNxt = other.gameObject.GetComponent<LandscapeData>();
         landscapeDataCur.correctlyConnected -= (
-            (landscapeDataCur.orderInRythm + 1) % 5 == landscapeDataNxt.orderInRythm) ? 1 : 0;
+            ((landscapeDataCur.orderInRythm + 1) % 5 == landscapeDataNxt.orderInRythm)) || 
+            (landscapeDataNxt.tag == "Final") ? 1 : 0;
         if (landscapeDataCur.correctlyConnected <= 0)
         {
             Debug.Log("Landscapes are no longer correctly connected.");
