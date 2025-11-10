@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb1ce058870ff894b8f58313ecc6d66c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orderInRythm: 3
+  orderInRythm: 2
   correctlyConnected: 0
 --- !u!114 &-8407414591737199188
 MonoBehaviour:

@@ -7,6 +7,6 @@ public class LandscapeData : MonoBehaviour
 {
 
     public int orderInRythm;
-    private LandscapeData connectedScape;
-    public bool correctlyConnected = false;
+    // private LandscapeData connectedScape;
+    public int correctlyConnected = 0;
 }

@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb1ce058870ff894b8f58313ecc6d66c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orderInRythm: 4
+  orderInRythm: 3
   correctlyConnected: 0
 --- !u!114 &-5681677803724319490
 MonoBehaviour:

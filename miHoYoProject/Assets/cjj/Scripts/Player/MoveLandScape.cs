@@ -9,6 +9,8 @@ public class MoveLandScape : MonoBehaviour
     public InputAction rotateAction;
     public InputAction moveAction;
 
+    public InputAction verticalAction;
+
     public PlayerGameplay playerGameplay;
 
     public float rotateSpeed = 0f;
@@ -24,6 +26,7 @@ public class MoveLandScape : MonoBehaviour
     {
         rotateAction.Enable();
         moveAction.Enable();
+        verticalAction.Enable();
         // rotateAction.performed += RotateLandscape;
     }
 
@@ -31,6 +34,7 @@ public class MoveLandScape : MonoBehaviour
     {
         rotateAction.Disable();
         moveAction.Disable();
+        verticalAction.Disable();
         // rotateAction.performed -= RotateLandscape;
     }
     void FixedUpdate()
@@ -48,12 +52,22 @@ public class MoveLandScape : MonoBehaviour
 
             Vector2 moveInput = moveAction.ReadValue<Vector2>().normalized;
 
-            if(moveInput != Vector2.zero)
+            if (moveInput != Vector2.zero)
             {
                 Debug.Log("Move Input: " + moveInput);
                 playerGameplay.chosenLandscape.GetComponent<Rigidbody>().MovePosition(
-                    playerGameplay.chosenLandscape.transform.position + 
+                    playerGameplay.chosenLandscape.transform.position +
                     new Vector3(moveInput.x, 0, moveInput.y) * moveSpeed * Time.fixedDeltaTime
+                );
+            }
+            
+            if(verticalAction.ReadValue<float>() != 0f)
+            {
+                float verticalInput = verticalAction.ReadValue<float>();
+                Debug.Log("Vertical Input: " + verticalInput);
+                playerGameplay.chosenLandscape.GetComponent<Rigidbody>().MovePosition(
+                    playerGameplay.chosenLandscape.transform.position +
+                    new Vector3(0, verticalInput, 0) * moveSpeed * Time.fixedDeltaTime
                 );
             }
         }
