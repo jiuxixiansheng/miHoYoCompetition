@@ -2190,7 +2190,7 @@ GameObject:
   - component: {fileID: 6424536248196757398}
   m_Layer: 6
   m_Name: LandScape_Ice
-  m_TagString: Untagged
+  m_TagString: Final
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
